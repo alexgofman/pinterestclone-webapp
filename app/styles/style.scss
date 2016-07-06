@@ -1,0 +1,118 @@
+$green:#34B434;
+$brown:#412207;
+$background:#EFFF72;
+
+
+body{
+  padding-top:100px;
+  background:$background;
+  font-family: 'Arimo', sans-serif;
+}
+li{list-style:none}
+.navbar{
+  padding:0 3%;
+  background:$brown;
+  border:none;
+  padding-top:10px;
+  padding-bottom:5px;
+  border-bottom:2px solid darken($brown,20%);
+ .navbar-nav .active a,.navbar-brand{
+  color:$green;
+  background:none;
+    &:hover{
+      color:lighten($green,15%);
+      background:none;
+    }
+  }
+  .navbar-nav li a{
+    color:white;
+    font-size:1.3em;
+    &:hover{
+      background:#337AB7;
+    }
+  }
+  .navbar-header span{
+    font-size:2em;
+  }
+  .navbar-right, .navbar-header{
+    display:flex;
+    align-items:center;
+  }
+}
+.btn-add-pin{
+  color:white;
+  background:darken($green,10%);
+}
+.pin-form{
+    
+    background:darken($green,10%);
+    border:2px solid darken($green,40%);
+    border-radius:4px;
+    padding:4px;
+    color:white;
+    @media (max-width:600px){
+      margin-top:20%;
+      width:80%;
+    }
+    .btn{
+      background:#FF2828;
+    }
+    h4{
+      text-align:center;
+      text-decoration:underline;
+    }
+
+}
+.banner{
+  text-align:center;
+  color:$green;
+  font-style:bold;
+}
+.board{
+  border-radius:5px;
+  background:white;
+  max-width:250px;
+  box-shadow:3px 2px 5px;
+  list-style:none;
+  margin:7px;
+ 
+  &:hover{
+    color:opacify(rgba(0, 0, 0, 0.5), 0.1)
+  }
+  span{
+    font-size:.9em;
+  }
+  @media (max-width:340px){
+    font-size:.8em;
+  }
+  h4{
+    
+    text-align:center;
+    text-decoration:underline;  
+  }
+  img{
+    margin:0 auto;
+    max-width:250px;
+    max-height:250px;
+    @media (max-width:400px){
+      width:100%;
+    }
+  }
+  .title-mobile{
+    position:relative;
+    top:-40px;
+    left:10%;
+    width:80%;
+    background:#DD3333;
+    text-align:center;
+    color:white;
+    opacity:.9;
+  }
+  .icons{
+    float:right;
+    color:blue;
+    .glyphicon{
+      padding-left:7px;
+    }
+  }
+}
